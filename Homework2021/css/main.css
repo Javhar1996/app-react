@@ -1,0 +1,434 @@
+body {
+    background-color: #f5f5f5;
+}
+
+.navbar .container .row .soz {
+    margin-left: 650px;
+}
+
+.navbar .container .row .card {
+    width: 99px;
+    height: 38px;
+}
+
+.navbar .container .row .card3 {
+    background-color: #f5f5f5;
+    width: 35px;
+    height: 35px;
+    border-radius: 31px;
+    margin-left: 15px;
+}
+
+* span {
+    opacity: 0.7;
+    font-size: small;
+}
+
+* p {
+    font-size: smaller;
+
+}
+
+
+* h6 {
+    font-size: 15px;
+}
+
+
+.nav-item {
+    position: relative;
+}
+
+.nav-item:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-item:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+.link-background ul {
+    list-style: none;
+}
+
+.link-background ul a {
+    text-decoration: none;
+    color: grey;
+}
+
+.card .col-10 .sms {
+    border: 1px solid lightgrey;
+    border-radius: 30px;
+    width: 509px;
+    height: 172px;
+    margin-left: 50px;
+}
+
+.back {
+    width: 38px;
+    height: 38px;
+    background-color: #f5f5f5;
+    border-radius: 21px;
+    margin-left: 488px;
+    margin-top: -49px;
+
+}
+
+.card .row .sms1 {
+    width: 549px;
+    margin-left: -82px;
+    border-radius: 55px;
+    height: 60px;
+}
+
+.background {
+    width: 36px;
+    height: 36px;
+    background-color: white;
+    border-radius: 21px;
+    margin-top: -77px;
+    margin-left: 569px;
+}
+
+.tab-content .container .oval {
+    width: 37px;
+    height: 60px;
+    background-color: #63C19C;
+    margin-left: -96px;
+    margin-top: -24px;
+    border-radius: 41px;
+
+}
+
+.tab-content .container .oval2 {
+    width: 37px;
+    height: 60px;
+    margin-left: -96px;
+    margin-top: -24px;
+    border-radius: 41px;
+    border: 1px solid wheat;
+    color: wheat;
+}
+
+.tab-content .container .oval3 {
+    width: 37px;
+    height: 60px;
+    margin-left: -96px;
+    margin-top: -24px;
+    border-radius: 41px;
+    opacity: 0.5;
+    border: 1px solid;
+}
+
+.zero {
+    width: 37px;
+    height: 37px;
+    background-color: #f5f5f5;
+    border-radius: 21px;
+    margin-top: 16px;
+    margin-left: -98px;
+}
+
+.word {
+    font-size: 18px;
+    margin-left: -83px;
+    margin-top: -60px;
+}
+
+.fon {
+    width: 89px;
+    height: 66px;
+    background-color: #f5f5f5;
+    border-radius: 11px;
+    margin-left: -109px;
+}
+
+.line {
+    width: 730px;
+    margin-left: -142px;
+    margin-top: 40px;
+}
+
+.tab-content .row .photo {
+    margin-left: -98px;
+}
+
+.tab-content .secondlist {
+    width: 549px;
+    margin-left: -111px;
+    border-radius: 55px;
+    height: 60px;
+}
+
+.tab-content .inputga {
+    margin-left: -119px;
+}
+
+.tab-content .card2 {
+    width: 481px;
+    height: 32px;
+    margin-left: -89px;
+    border-radius: 10px;
+    background-color: #F0F0F0;
+}
+
+.tab-content .card3 {
+    width: 216px;
+    height: 32px;
+    margin-left: -89px;
+    border-radius: 10px;
+    background-color: #F0F0F0;
+}
+
+.tab-content .card4 {
+    width: 181px;
+    height: 32px;
+    margin-left: -89px;
+    border-radius: 10px;
+    background-color: #F0F0F0;
+}
+
+#menuToggle {
+    display: block;
+    position: fixed;
+    top: 19px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#menuToggle input {
+    display: block;
+    width: 22px;
+    height: 10px;
+    position: absolute;
+    top: 3px;
+    left: -12px;
+    cursor: pointer;
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+    -webkit-touch-callout: none;
+}
+
+/*
+ * hamburger
+ */
+#menuToggle span {
+    display: inline;
+    width: 22px;
+    height: 3px;
+    margin-bottom: 3px;
+    position: relative;
+    left: -12px;
+    background: black;
+    border-radius: 3px;
+
+    z-index: 1;
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+    transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+/*
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+}
+
+/*
+ * hide the middle one
+ */
+#menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu {
+    position: absolute;
+    width: 100vw;
+    height: 200vh;
+    margin: -100px 0 0 0;
+    padding: 50px;
+    padding-top: 270px;
+    left: -390px;
+    text-align: center;
+    opacity: 0.6;
+    color: white;
+    background: black;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+
+    transform-origin: 0% 0%;
+    transform: translate(0, -100%);
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+#menu li {
+    padding: 10px 0;
+    font-size: 22px;
+    color: white;
+    font-family: inherit;
+    text-transform: uppercase}
+
+#menu a {
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+#menu li:hover {
+    color: #63C19C;
+}
+
+/*
+ * slide it in
+ */
+#menuToggle input:checked ~ ul {
+    transform: none;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+footer {
+    background-color: #555;
+    color: #bbb;
+    line-height: 1.5;
+}
+footer a {
+    text-decoration: none;
+    color: #eee;
+}
+a:hover {
+    text-decoration: underline;
+}
+.ft-title {
+    color: #fff;
+    font-size: 1.375rem;
+    padding-bottom: 0.625rem;
+}
+/* Sticks footer to bottom */
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.container {
+    flex: 1;
+}
+/* Footer main */
+.ft-main {
+    padding: 1.25rem 1.875rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+@media only screen and (min-width: 29.8125rem /* 477px */) {
+    .ft-main {
+        justify-content: space-evenly;
+    }
+}
+@media only screen and (min-width: 77.5rem /* 1240px */) {
+    .ft-main {
+        justify-content: space-evenly;
+    }
+}
+.ft-main-item {
+    padding: 1.25rem;
+    min-width: 12.5rem;
+}
+
+/* Footer main | Newsletter form */
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+input[type="email"] {
+    border: 0;
+    padding: 0.625rem;
+    margin-top: 0.3125rem;
+}
+input[type="submit"] {
+    background-color:#63C19C;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+    padding: 0.625rem 0.9375rem;
+    margin-top: 0.3125rem;
+}
+/* Footer social */
+.ft-social {
+    padding: 0 1.875rem 1.25rem;
+}
+.ft-social-list {
+    display: flex;
+    justify-content: center;
+    border-top: 1px #777 solid;
+    padding-top: 1.25rem;
+}
+.ft-social-list li {
+    margin: 0.5rem;
+    font-size: 1.25rem;
+}
+/* Footer legal */
+.ft-legal {
+    padding: 0.9375rem 1.875rem;
+    background-color: #333;
+}
+.ft-legal-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.ft-legal-list li {
+    margin: 0.125rem 0.625rem;
+    white-space: nowrap;
+}
+/* one before the last child */
+.ft-legal-list li:nth-last-child(2) {
+    flex: 1;
+}
+
+.inputbu{
+    width: 512px;
+    margin-left: 13px;
+}
